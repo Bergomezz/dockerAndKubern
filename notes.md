@@ -1,37 +1,35 @@
-# To know about your CODENAME version enter the follow command in the terminal
+# _To know about your CODENAME version enter the follow command in the terminal_
 
 ```
 grep CODENAME /etc/os-release
 
 lsb_release -c
+To check if you are running a 64bit OS, use this command: uname -m
 ```
-
-To check if you are running a 64bit OS, use this command:
-`uname -m`
 
 # Docker part
 
-`docker build <filePathOfDockerfil>` - build the initial image <br>
+`docker build <filePathOfDockerfil>` - build the initial image<br>
 `docker run <containerID>` - run you project image<br>
-`docker ps` - list all containers that are currently running.<br>
-`docker stop <containerID>` - stops container with given ID.<br>
+`docker ps`- list all containers that are currently running<br>
+`docker stop <containerID>` - stops container with given ID<br>
 
-The flags meaning: <br>
-`-d`: runs the process in background and print the Container ID<br>
-`-p`: publishes port(s) from the container to host. Format is `hostPort:containerPort`. Example `-p 80<br>
+## The flags meaning:
+
+`-d`: runs the process in background and print the Container ID
+`-p`: publishes port(s) from the container to host. Format is hostPort:containerPort. Example -p 80<br>
 `-a`: list all process the docker created<br>
 `-i`: keep STDIN open even if not attached (for interactive commands like bash or zsh)<br>
 `-t`: Allocates a pseudo-TTY to the container<br>
-`-v`: Bind mount a volume<br>
+`-v`: Bind mount a volume
 Example of using these flags together:
 
-bash
-
 ```
+bash
 $ docker run -it ubuntu bash
 ```
 
-## Docker Compose
+# Docker Compose
 
 `docker compose up` - start services defined in docker-compose file<br>
 `docker compose down` - remove services and networks<br>
@@ -53,3 +51,7 @@ $ docker run -it ubuntu bash
 `docker compose top` - display the running processes inside a container<br>
 `docker compose inspect` - return low-level information on objects in Docker<br>
 `docker compose login` - Log in to Docker Registry<br>
+
+### Extra notes
+
+> _*Every code changes, we will need to down the image and rebuild up*_
