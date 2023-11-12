@@ -9,12 +9,12 @@ To check if you are running a 64bit OS, use this command: uname -m
 
 # Docker part
 
-`docker build <filePathOfDockerfil>` - build the initial image<br>
+`docker build <filePathOfDockerfile>` - build the initial image<br>
 `docker run <containerID>` - run you project image<br>
 `docker ps`- list all containers that are currently running<br>
 `docker stop <containerID>` - stops container with given ID<br>
 `docker rmi <imageID>` - remove images<br>
-`docker start <nameTag>` - restart the container stoped<br>
+`docker start <nameTag>` - restart the container stoped in detach mode<br>
 
 ## The flags meaning:
 
@@ -25,6 +25,7 @@ To check if you are running a 64bit OS, use this command: uname -m
 `-t`: Allocates a pseudo-TTY to the container<br>
 `-v`: Bind mount a volume<br>
 `--name`: Name you image<br>
+`--rm`: Auto remove exited container with the `run` command<br>
 Example of using these flags together:
 
 ```
