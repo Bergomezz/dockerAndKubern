@@ -58,4 +58,5 @@ $ docker run -it ubuntu bash
 
 ### Extra notes
 
-> _*Every code changes, we will need to down the image and rebuild up*_
+> - _*Every code changes, we will need to down the image and rebuild up*_<br>
+> - _*If we have some updated on the container, we need to pull the image again to make some effect. We need to use `docker pull` again*_<br>
