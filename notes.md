@@ -15,6 +15,9 @@ To check if you are running a 64bit OS, use this command: uname -m
 `docker stop <containerID>` - stops container with given ID<br>
 `docker rmi <imageID>` - remove images<br>
 `docker start <nameTag>` - restart the container stoped in detach mode<br>
+`docker images` - show all the images created and pulled from your machine<br>
+`docker volumes` - show all volumes that you have created<br>
+`docker images prune` - to delete all images of your machine. (had to be caution with this command)<br>
 
 ## The flags meaning:
 
